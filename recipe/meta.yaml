@@ -23,7 +23,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - cacheout >=0.16.0
-    - botocore >=1.34.70
+    - botocore >=1.39.9
 
 test:
   imports:
