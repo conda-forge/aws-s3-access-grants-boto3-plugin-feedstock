@@ -1,5 +1,5 @@
 {% set name = "aws-s3-access-grants-boto3-plugin" %}
-{% set version = "1.2.0" %}
+{% set version = "1.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/aws_s3_access_grants_boto3_plugin-{{ version }}.tar.gz
-  sha256: f02fc8d3acc1906e129dba3f4c1199b9c06a5c643850e6f56b2c7bcd7550b048
+  sha256: 83fab0f08dd5c1a0508a4df1a43ada1128a51b4f7fb12c8c1e1650089e029940
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - cacheout >=0.16.0
-    - botocore >=1.34.70
+    - botocore >=1.39.9
 
 test:
   imports:
